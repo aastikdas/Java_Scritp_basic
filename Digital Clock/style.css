@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1728842328265-15a7660088d7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    overflow: hidden;
+}
+
+h1 {
+    padding: 20px 40px;
+    border: 2px solid #ffeb3b;
+    border-radius: 12px;
+    color: #ffeb3b;
+    font-family: 'Orbitron', monospace;
+    font-size: 2rem;
+    transition: all 0.3s ease;
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    border-image: linear-gradient(87deg, red, orange, yellow, green, blue, indigo, violet) 20;
+    filter: blur(1);
+}
+
+h1:hover {
+    box-shadow: 0 0 25px rgba(255, 235, 59, 0.8), 0 0 50px rgba(255, 235, 59, 0.8);
+    transform: scale(1.1);
+}
+
+.display {
+    display: flex;
+    gap: 20px;
+}
+
+.box1,
+.box2,
+.box3 {
+    display: flex;
+    width: 80px;
+    height: 120px;
+    text-shadow: 5px 5px 5px gray;
+    background: linear-gradient(145deg, #ffeb3b, #ffc107);
+    padding: 20px;
+    font-size: 2.5rem;
+    font-family: 'Share Tech Mono', monospace;
+    border-radius: 20px;
+    color: #ff1744;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@keyframes ulta-ghumna {
+    0% {
+        transform: rotateZ(-5deg);
+    }
+
+    100% {
+        transform: rotateZ(5deg);
+    }
+
+}
+
+.box3 {
+    animation: ulta-ghumna 0.5s infinite alternate;
+}
+
+.box2-anim{
+    animation: ulta-ghumna 0.5s infinite alternate;
+}
+
+.box1:hover,
+.box2:hover,
+.box3:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+footer{
+    position: absolute;
+    font-size: 1.2em;
+    bottom: 20vh;
+    animation: zoom-zoom 1s infinite alternate;
+    border-bottom: 2px solid wheat;
+}
+@keyframes zoom-zoom {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+
+}
+
+.ball{
+    height: 20px;
+    width: 20px;
+    background-color: red;
+    border-radius: 50%;
+    animation: move 0.5s infinite alternate;
+}
+@keyframes move {
+    0% {
+        transform: translateX(0px)
+    }
+
+    100% {
+        transform: translateX(50vw)
+    }
+
+}
